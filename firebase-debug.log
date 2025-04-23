@@ -172,3 +172,9 @@ Before we get started, keep in mind:
 [info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
 [info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
 [info] 
+[debug] [2025-04-23T05:21:47.497Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-23T05:21:47.992Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-23T05:21:47.992Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-23T05:26:05.809Z] >>> [apiv2][query] GET https://api.github.com/repos/luis2091/actions/secrets/public-key type=owner
+[debug] [2025-04-23T05:26:06.442Z] <<< [apiv2][status] GET https://api.github.com/repos/luis2091/actions/secrets/public-key 401
+[debug] [2025-04-23T05:26:06.443Z] <<< [apiv2][body] GET https://api.github.com/repos/luis2091/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
