@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Fast Food Brisas de Venecia</title>
+    <link rel="stylesheet" href="../estilos/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../Imagen/logo.png" alt="Logo Fast Food">
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="./menu.html" class="nav-link active">Menú</a></li>
+            <li class="nav-item"><a href="./Nosotros.html" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="./contactos.html" class="nav-link">Contacto</a></li>
+            <li class="nav-item">
+                <a href="carrito.html" class="nav-link carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrito-cantidad">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main id="main-content">
+        <section class="menu-header">
+            <h1>Nuestro Menú</h1>
+            <p>Descubre nuestra deliciosa selección de comidas rápidas</p>
+        </section>
+
+        <!-- Sección Hamburguesas -->
+        <section class="menu-section" id="hamburguesas">
+            <h2>Hamburguesas</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="../imagen/hamburguesa clasica.png" alt="Hamburguesa Clásica">
+                    <div class="menu-item-content">
+                        <h3>Hamburguesa Clásica</h3>
+                        <p>Carne de res, lechuga, tomate, queso y salsa especial</p>
+                        <span class="price">$12.000</span>
+                        <button class="btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../imagen/hamburguesa-doble.png" alt="Hamburguesa Doble">
+                    <div class="menu-item-content">
+                        <h3>Hamburguesa Doble</h3>
+                        <p>Doble carne, doble queso, tocino y salsa BBQ</p>
+                        <span class="price">$18.000</span>
+                        <button class="btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../imagen/hamburguesa-pollo.png" alt="Hamburguesa de Pollo">
+                    <div class="menu-item-content">
+                        <h3>Hamburguesa de Pollo</h3>
+                        <p>Pechuga de pollo, lechuga, tomate y mayonesa</p>
+                        <span class="price">$15.000</span>
+                        <button class="btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Perros Calientes -->
+        <section class="menu-section" id="perros">
+            <h2>Perros Calientes</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="../imagen/perro clasico.png" alt="Perro Clásico">
+                    <div class="menu-item-content">
+                        <h3>Perro Clásico</h3>
+                        <p>Salchicha, papitas, salsa de tomate y mostaza</p>
+                        <span class="price">$10.000</span>
+                        <button class="btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../imagen/perro especial.png" alt="Perro Especial">
+                    <div class="menu-item-content">
+                        <h3>Perro Especial</h3>
+                        <p>Salchicha, queso, tocineta y salsas especiales</p>
+                        <span class="price">$14.000</span>
+                        <button class="btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Pizzas -->
+        <section class="menu-section" id="pizzas">
+            <h2>Pizzas</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="../imagen/pizza.png" alt="Pizza Hawaiana">
+                    <div class="menu-item-content">
+                        <h3>Pizza Hawaiana</h3>
+                        <p>Jamón, piña y queso mozzarella</p>
+                        <span class="price">$20.000</span>
+                        <button class="btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../imagen/pizza peperoni.png" alt="Pizza Pepperoni">
+                    <div class="menu-item-content">
+                        <h3>Pizza Pepperoni</h3>
+                        <p>Pepperoni y queso mozzarella</p>
+                        <span class="price">$22.000</span>
+                        <button class="btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Bebidas -->
+        <section class="menu-section" id="bebidas">
+            <h2>Bebidas</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="../imagen/gaseosa.png" alt="Gaseosa">
+                    <div class="menu-item-content">
+                        <h3>Gaseosa</h3>
+                        <p>Coca-Cola, Sprite, Fanta (350ml)</p>
+                        <span class="price">$3.000</span>
+                        <button class="btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../imagen/jugos naturales.png" alt="Jugo Natural">
+                    <div class="menu-item-content">
+                        <h3>Jugo Natural</h3>
+                        <p>Variedad de frutas naturales</p>
+                        <span class="price">$5.000</span>
+                        <button class="btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4>Fast Food Brisas de Venecia</h4>
+                <p>¡La mejor comida rápida de la ciudad!</p>
+                <p>Dirección: Calle Principal #123</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos en redes sociales</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-hours">
+                <h4>Horario de Atención</h4>
+                <p>Lunes a Viernes: 11:00 AM - 10:00 PM</p>
+                <p>Sábados y Domingos: 12:00 PM - 11:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fast Food Brisas de Venecia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script src="../script/productos.js"></script>
+    <script src="../script/menu.js"></script>
+</body>
+</html>

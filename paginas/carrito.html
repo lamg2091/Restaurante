@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="trusted-types 'none';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Fast Food Brisas de Venecia</title>
+    <link rel="stylesheet" href="../estilos/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../imagen/logo.png" alt="Logo Fast Food">
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="../paginas/menu.html" class="nav-link">Menú</a></li>
+            <li class="nav-item"><a href="../paginas/Nosotros.html" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="../paginas/contactos.html" class="nav-link">Contacto</a></li>
+            <li class="nav-item">
+                <a href="./carrito.html" class="nav-link carrito active">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrito-cantidad">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main id="main-content">
+        <section class="cart-section">
+            <h1>Tu Carrito de Compras</h1>
+            
+            <div class="cart-container">
+                <!-- Lista de Productos -->
+                <div class="cart-items" id="cartItems">
+                    <!-- Los items del carrito se insertarán dinámicamente aquí -->
+                </div>
+
+                <!-- Resumen del Carrito -->
+                <div class="cart-summary">
+                    <h2>Resumen del Pedido</h2>
+                    <div class="summary-item">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>IVA (19%):</span>
+                        <span id="iva">$0</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span id="total">$0</span>
+                    </div>
+                    <button id="checkoutBtn" class="btn-checkout">Proceder al Pago</button>
+                    <button id="clearCartBtn" class="btn-clear">Vaciar Carrito</button>
+                </div>
+            </div>
+
+            <!-- Carrito Vacío -->
+            <div class="empty-cart" id="emptyCart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Tu carrito está vacío</p>
+                <a href="menu.html" class="btn-primary">Ver Menú</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4>Fast Food Brisas de Venecia</h4>
+                <p>¡La mejor comida rápida de la ciudad!</p>
+                <p>Dirección: Calle Principal #123</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos en redes sociales</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-hours">
+                <h4>Horario de Atención</h4>
+                <p>Lunes a Viernes: 11:00 AM - 10:00 PM</p>
+                <p>Sábados y Domingos: 12:00 PM - 11:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fast Food Brisas de Venecia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el carrito -->
+    <script src="../script/carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Usuarios</title>
+  <link rel="stylesheet" href="../estilos/usuarios.css">
+</head>
+<body>
+  <a href="../paginas/admin.html" id="volverLink" target="_blank">Volver al Admin</a>
+  <h1>Gestión de Usuarios</h1>
+
+  <!-- Botón para agregar un nuevo usuario -->
+  <button id="btnAgregarUsuario">Agregar Usuario</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Rol</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+
+  <!-- Modal para agregar/editar usuarios -->
+  <div class="modal">
+    <div class="modal-content">
+      <h2 id="modalTitle">Agregar Usuario</h2>
+      <form id="usuarioForm">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre del usuario" required>
+        <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+        <input type="text" name="rol" id="rol" placeholder="Rol" required>
+        <button type="submit">Guardar</button>
+        <button type="button" id="btnCancelar">Volver Atrás</button>
+      </form>
+    </div>
+  </div>
+  <!-- Scripts de Firebase para base de datos -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+<script type="module" src="../script/firebaseConfig.js"></script>
+  <script src="../script/usuarios.js"></script>
+</body>
+</html>

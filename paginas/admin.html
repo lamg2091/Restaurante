@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="trusted-types 'none';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="../estilos/admin.css" />
+  <script src="libs/chart.min.js"></script>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <h2>Admin</h2>
+    <nav>
+      <a href="../paginas/darhboard.html">Dashboard</a>
+      <a href="../paginas/pedidos.html">Pedidos</a>
+      <a href="../paginas/productos.html">Productos</a>
+      <a href="../paginas/categoria.html">Categorías</a>
+      <a href="../paginas/usuario.html">Usuarios</a>
+      <a href="../paginas/configuracion.html">Configuración</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <header>
+      <button id="toggleSidebar">☰</button>
+      <input type="text" placeholder="Buscar..."/>
+      <div class="right">
+        <span id="notifications">🔔</span>
+        <span id="profile">👤 Admin</span>
+        <button id="logout">Salir</button>
+      </div>
+    </header>
+
+    <section class="dashboard">
+      <h1>Resumen General</h1>
+      <div class="stats">
+        <div class="card">Ventas Hoy<br>$1,200</div>
+        <div class="card">Pedidos<br>35</div>
+        <div class="card">Usuarios<br>150</div>
+        <div class="card">Productos<br>80</div>
+      </div>
+
+      <div class="charts">
+        <canvas id="salesChart"></canvas>
+      </div>
+
+      <div class="lists">
+        <div>
+          <h2>Pedidos Recientes</h2>
+          <ul>
+            <li>#123 - Cliente A - $30</li>
+            <li>#124 - Cliente B - $45</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Productos Populares</h2>
+          <ul>
+            <li>Hamburguesa Doble</li>
+            <li>Pizza Pepperoni</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Scripts de Firebase para base de datos -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+<script type="module" src="../script/firebaseConfig.js"></script>
+  <script src="../script/admin.js"></script>
+</body>
+</html>

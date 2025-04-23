@@ -1,0 +1,77 @@
+/* Estilos generales para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Estilo para los botones de exportación */
+.export-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#volverLink {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-top: 20px;
+    border-bottom: 20px;
+    display: flex;
+    text-align: center;
+    width: 120px;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+/* Canvas para el gráfico */
+#reporteChart {
+    max-width: 80%;
+    margin: 40px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+@media (max-width: 768px){
+    .export-buttons bottom{
+        flex-direction: column;
+    }
+    bottom{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    #reporteChart{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Brisas de Venecia</title>
+    <link rel="stylesheet" href="../estilos/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../Imagen/logo.png" alt="Logo Fast Food">
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="/index.html" class="nav-link active">Inicio</a></li>
+            <li class="nav-item"><a href="./paginas/menu.html" class="nav-link">Menú</a></li>
+            <li class="nav-item"><a href="./paginas/Nosotros.html" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="./paginas/contactos.html" class="nav-link">Contacto</a></li>
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrito-cantidad">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main id="main-content">
+        <!-- Banner Principal -->
+        <section class="hero-banner">
+            <div class="banner-content">
+                <h1>Fast Food Brisas de Venecia</h1>
+                <p>¡Las mejores hamburguesas y comidas rápidas de la ciudad!</p>
+                <a href="#menu" class="btn-primary">Ver Menú</a>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section class="featured-products">
+            <h2>Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="../Imagen/hamburguesa.jpg" alt="Hamburguesa Especial">
+                    <h3>Hamburguesa Especial</h3>
+                    <p>Deliciosa hamburguesa con carne 100% de res, queso, tocino y vegetales frescos</p>
+                    <span class="price">$15.000</span>
+                    <button class="btn-add-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-card">
+                    <img src="../Imagen/perro-caliente.jpg" alt="Perro Caliente">
+                    <h3>Perro Caliente Supremo</h3>
+                    <p>Hot dog con salchicha premium, papitas, queso y salsas especiales</p>
+                    <span class="price">$12.000</span>
+                    <button class="btn-add-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-card">
+                    <img src="../Imagen/pizza.jpg" alt="Pizza">
+                    <h3>Pizza Personal</h3>
+                    <p>Pizza con ingredientes frescos y queso mozzarella</p>
+                    <span class="price">$18.000</span>
+                    <button class="btn-add-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categorías -->
+        <section class="categories">
+            <h2>Nuestras Categorías</h2>
+            <div class="categories-grid">
+                <a href="categoria/hamburguesas.html" class="category-card">
+                    <img src="../Imagen/cat-hamburguesas.jpg" alt="Categoría Hamburguesas">
+                    <h3>Hamburguesas</h3>
+                </a>
+                <a href="categoria/perros.html" class="category-card">
+                    <img src="../Imagen/cat-perros.jpg" alt="Categoría Perros Calientes">
+                    <h3>Perros Calientes</h3>
+                </a>
+                <a href="categoria/pizzas.html" class="category-card">
+                    <img src="../Imagen/cat-pizzas.jpg" alt="Categoría Pizzas">
+                    <h3>Pizzas</h3>
+                </a>
+                <a href="categoria/bebidas.html" class="category-card">
+                    <img src="../Imagen/cat-bebidas.jpg" alt="Categoría Bebidas">
+                    <h3>Bebidas</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4>Fast Food Brisas de Venecia</h4>
+                <p>¡La mejor comida rápida de la ciudad!</p>
+                <p>Dirección: Calle Principal #123</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos en redes sociales</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-hours">
+                <h4>Horario de Atención</h4>
+                <p>Lunes a Viernes: 11:00 AM - 10:00 PM</p>
+                <p>Sábados y Domingos: 12:00 PM - 11:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fast Food Brisas de Venecia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script src="../script/producto.js"></script>
+
+    <scpts que usan Firebase -->
+<script type="module" src="../script/tuArchivo.js"></script>
+</body>
+</html>
