@@ -72,8 +72,8 @@ restaurante/
 
 Instrucciones de Instalación
 
-git clone https://github.com/tu-usuario/restaurante.git
-cd restaurante
+
+https://github.com/lamg2091/Restaurante.git
 
 Instalar Dependencias
 npm install
